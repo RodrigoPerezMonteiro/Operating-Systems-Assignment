@@ -1,0 +1,61 @@
+HT_t* ht_init(int shard_id)
+HT_t* ht_init(int shard_id)
+HT_t* ht_init(int shard_id)
+Element <k6,val:6> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k6,val:6> inserted in shard 2. Prev Value=val:6
+Element <k5,val:5> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k5,val:5> inserted in shard 2. Prev Value=val:5
+Element <k4,val:4> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k4,val:4> inserted in shard 2. Prev Value=val:4
+Element <k3,val:3> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k3,val:3> inserted in shard 2. Prev Value=val:3
+Element <k2,val:2> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k2,val:2> inserted in shard 2. Prev Value=val:2
+Element <k1,val:1> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k1,val:1> inserted in shard 2. Prev Value=val:1
+Element <k0,val:0> being inserted in shard 2....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k0,val:0> inserted in shard 2. Prev Value=val:0
+Element <k6,val:6> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k6,val:6> inserted in shard 1. Prev Value=val:6
+Element <k5,val:5> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k5,val:5> inserted in shard 1. Prev Value=val:5
+Element <k4,val:4> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k4,val:4> inserted in shard 1. Prev Value=val:4
+Element <k3,val:3> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k3,val:3> inserted in shard 1. Prev Value=val:3
+Element <k2,val:2> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k2,val:2> inserted in shard 1. Prev Value=val:2
+Element <k1,val:1> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k1,val:1> inserted in shard 1. Prev Value=val:1
+Element <k0,val:0> being inserted in shard 1....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k0,val:0> inserted in shard 1. Prev Value=val:0
+Element <k6,val:6> being inserted in shard 0....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k6,val:6> inserted in shard 0. Prev Value=val:6
+Element <k5,val:5> being inserted in shard 0....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k5,val:5> inserted in shard 0. Prev Value=val:5
+Element <k4,val:4> being inserted in shard 0....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k4,val:4> inserted in shard 0. Prev Value=val:4
+Element <k3,val:3> being inserted in shard 0....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k3,val:3> inserted in shard 0. Prev Value=val:3
+Element <k2,val:2> being inserted in shard 0....char * ht_insert(HT_t* hashtable,char* key, char* value)
+char * ht_remove(HT_t* hashtable,char* key)
+Element <k2,val:2> inserted in shard 0. Prev Value=val:2
+Element <k1,val:1> being inserted in shard 0....char * ht_insert(HT_t* hashtable,char* key, char* 

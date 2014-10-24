@@ -1,0 +1,37 @@
+Relatório de alterações 1ª -> 2ª entrega do projeto
+
+Curso: LEIC
+Campus: Alameda
+Cadeira: Sistemas Operativos
+Grupo: 20
+Alunos: 73701; 72745; 72976
+
+
+Tentámos que a primeira parte do projeto contemplasse a melhor opção de sincronização entre
+clientes e servidores (kos.c // kos_server.c) para que nesta segunda parte não fosse
+necessária uma preocupação tão grande com essa questão.
+
+No que diz respeito ao buffer, implementámos o "problema" produtores/consumidores,
+abordado nas aulas teóricas, que contempla um buffer circular em que produtores e consumidores
+acedem simultaneamente às posições do mesmo (diferentes). Um produtor assinala o semáforo dos
+consumidores quando termina a sua tarefa e vice-versa. Utilizamos dois semáforos (um para
+produtores e outro para consumidores) que nos permitem delimitar as respectivas secções
+críticas.
+
+Em relação ao paralelismo no acesso ao KOS, tinhamos implementado apenas a opção O1 à data da
+1ª entrega, pelo que nos propusemos a melhorar o paralelismo existente. Inicialmente optámos
+por implementar a opção O2 que permitia acessos paralelos na mesma partição, no entanto essa
+opção revelou-se insuficiente e decidimos optimizar para a solução O3 para a qual recorremos
+ao uso de semáforos para cada uma das listas de cada partição/shard. Verificámos que esta
+opção era mais eficiente que a anteriormente implementada.
+
+Quanto à persistência da informação em ficheiro, começámos por implementar a opção P0 com uma
+função de remoção de linhas bastante ineficiente,o que deu origem a ficheiros bastante grandes
+e recurso a operações "caras" (cópia integral do ficheiro à excepção da linha a eliminar
+para outro, posterior renomeação do mesmo e sua delecção). Identificámos o problema e
+procedemos na tentativa de melhorar a nossa solução, armazenando o valor da posição do par KV
+na própria partição (P1). Finalmente decidimos tornar o ficheiro ainda mais compacto e a
+inserção mais eficiente reaproveitando os espaços deixados em branco pelas anteriores
+remoções. Para tal utilizámos um registo das posições nas quais haviamos eliminado
+pares KV, o qual vai sendo acedido pela função de inserção que utiliza um dos "slots" vazios
+para inserir a menos que não haja (nesse caso insere no final do ficheiro).
